@@ -7,11 +7,20 @@
     */
 
     //ENTRADA
-
+let ativ1Peso5 = Number (prompt(`Informe sua nota na primeira atividade.`).trim()); 
+let ativ2Peso4 = Number (prompt(`Informe sua nota na segunda atividade.`).trim()); 
+let ativ3Peso1 = Number (prompt(`Informe sua nota na terceira atividade.`).trim());
 
     //PROCESSAMENTO
-
+    const conta1 = ativ1Peso5 * 0.5;
+    const conta2 = ativ2Peso4 * 0.4;
+    const conta3 = ativ3Peso1 * 0.1;
+    const total = conta1 + conta2 + conta3;
 
     //SAÍDA
+document.write(`A nota na primeira atividade foi ${ativ1Peso5}.`);
+document.write(`A nota nasegunda atividade foi ${ativ2Peso4}.`);
+document.write(`A nota na terceira atividade foi ${ativ3Peso1}.`);
+document.write(`A nota final foi ${total.toFixed(1).replace(".",",")}.`);
 
 </script>

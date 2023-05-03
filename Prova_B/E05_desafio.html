@@ -8,11 +8,16 @@
     */
 
     //ENTRADA
-
+    let kmLitro = Number(prompt(`Informe quantos quilômetros a motocicleta percorre com um litro de combustível.`).trim());
+    let kmPercorrido = Number(prompt(`Informe quantos quilômetros já foram percorridos.`).trim());
 
     //PROCESSAMENTO
-
+    const litrosConsumidos = kmPercorrido / kmLitro;
+    const revisoes = kmPercorrido / 2000;
+    const valorTotal = revisoes * 200;
 
     //SAÍDA
+    document.write(`Foram feitas ${revisoes.toFixed(0).replace(".", ",")} revisões na motocicleta, custando ${valorTotal.toFixed(2).replace(".",",")}.`);
+    document.write(`Foram consumidos ${litrosConsumidos.toFixed(1).replace(".",",")} litros de combustível.`);
 
 </script>

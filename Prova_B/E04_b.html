@@ -8,11 +8,12 @@
     */
 
     //ENTRADA
-
+    let salarioHora = Number(prompt(`Informe seu salário por hora trabalhada nos dias úteis.`).trim());
 
     //PROCESSAMENTO
-
+    const salarioFimSemana = salarioHora * 1.75;
 
     //SAÍDA
+    document.write(`O valor que será recebido por hora trabalhada no fim de semana, com o aumento de 75% será de R$${salarioFimSemana.toFixed(2).replace(".",",")}.`)
 
 </script>

@@ -9,10 +9,18 @@
 
     //ENTRADA
 
+    let quantidadeAluno1 = Number (prompt(`Informe quantos exercícios você conseguiu fazer.`).trim());
+    let quantidadeAluno2 = Number (prompt(`Informe quantos exercícios você conseguiu fazer.`).trim());
+    let quantidadeAluno3 = Number (prompt(`Informe quantos exercícios você conseguiu fazer.`).trim());
+    let quantidadeAluno4 = Number (prompt(`Informe quantos exercícios você conseguiu fazer.`).trim());
 
     //PROCESSAMENTO
 
+    const total = quantidadeAluno1 + quantidadeAluno2 + quantidadeAluno3 + quantidadeAluno4;
+    const media = total / 4;
 
     //SAÍDA
+
+    document.write(`A média entre os quatro alunos foi de ${media.toFixed(0).replace(".", ",")} exercícios.`)
 
 </script>
